@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="424dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:hint="Enter your username"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <!-- android:id gives unique identifier -->
+    <!-- android:layout width match parent means causes the width of the TextView element to be set to the width of its parent element, which in this case is the entire width of the screen.-->
+    <!-- layout height means causes the height of the TextView element to adjust to fit the text it contains-->
+    <!-- input type indicates that the input field should accept text input from the user -->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:minWidth="200dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Login" />
+
+
+</LinearLayout>
